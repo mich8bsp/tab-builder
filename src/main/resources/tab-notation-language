@@ -1,0 +1,11 @@
+Any song metadata (tuning, capo, key) will be specified at the beginning of input with json notation - example:  key: G \n capo: 3
+Song parts preceded by name of part in [] - example: [Chorus] or [Verse]
+Song elements (chords, tabs etc) will be separated by spaces or tabs
+Chords - prefix ch followed by name of chord or tabs over all strings - for example: chD\F#, ch[2x0232]
+Chords can be aliased in the metadata section - for example: chHendrixE: ch[076780]
+Tabs - number of string with "st" followed by the note played on that string - for example: 5st3
+for multiple notes on sample string, only the first definition of string is required - for example: 5st 3 4 7 6
+Slide/Hammer-on/off specified with s and h respectively - for example: 5st3h5 7s5
+Bends specified with b followed by the number of tones to bend (default is 1) - for example: 3st4b  or 2st13b1b1.5
+Tremolo specified with tr
+multiple notes played together - grouped with () - for example: (3st4 2st5)s(3st2 2st3)
